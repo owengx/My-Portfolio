@@ -1,9 +1,12 @@
+import React from 'react';
 import '../styles/Header.css';
+import Navigation from './Navigation';
 
 function Header() {
     return <header className ='header'>
-    <h1 className ='neonText'> Owen Gayle </h1>
-    <h2 className ='neonText'>SOFTWARE DEVELOPER</h2>
+    <h1>OWEN GAYLE</h1>
+    <Navigation/>
+
     </header>
 }
 

@@ -1,0 +1,36 @@
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* background: gray; */
+    padding: 15px 7%;
+    position: static;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li{
+    /* justify-content: flex-end; */
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 10;
+    cursor: pointer;
+}
+
+ul li:hover{
+    color: rgb(11, 152, 247);
+}
+
+ul li a {
+    /* justify-content: flex-end; */
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 10;
+    cursor: pointer;
+}

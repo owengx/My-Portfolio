@@ -1,34 +1,40 @@
-.header{
+.header {
     /* background: red; */
-    height: 800px;;
-  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.089);
+
 }
 
-.header h1{
+header h1 {
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h2 {
     margin: 0;
     padding-top: 50px;
     text-align: center;
-    color: black;
-    font-size: 3rem;
-}
-
-.header h2{
-    margin: 0;
-    padding-top: 50px;
-    text-align: center;
-    color: black;
+    color: whitesmoke;
     font-size: 3rem;
 }
 
 .neonText {
     color: #fff;
     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-  }
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}

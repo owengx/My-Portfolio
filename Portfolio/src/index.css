@@ -5,7 +5,9 @@
 }
 
 .container {
-  width:10vw;
+  width:100vw;
   min-height:100vh;
   background: Black;
+  color:white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
