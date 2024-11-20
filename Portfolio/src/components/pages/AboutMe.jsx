@@ -2,6 +2,7 @@ export default function About() {
   const mystyle = {
     padding: "20px",
     fontSize:"50px",
+    margin: "50px"
   }
   const mystyle2 = {
     padding: "20px",
