@@ -1,8 +1,17 @@
 export default function About() {
+  const mystyle = {
+    padding: "20px",
+    fontSize:"50px",
+  }
+  const mystyle2 = {
+    padding: "20px",
+    fontSize:"20px",
+    margin: "50px",
+  }
     return (
       <div>
-        <h1 ClassName='h1'>About Page</h1>
-        <p>
+        <h1 style ={mystyle}>About Page</h1>
+        <p style={mystyle2}>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
           mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non

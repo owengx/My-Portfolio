@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 
 
 export default function PortfolioContainer() {
+  //inline stlying for entire app. background, font color 
   const style = {
     backgroundColor: 'black',
     minHeight: '100vh',
