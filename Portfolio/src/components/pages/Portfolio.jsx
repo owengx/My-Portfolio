@@ -1,16 +1,93 @@
-export default function Portfolio() {
-    return (
-      <div>
-        <h1>Portfolio</h1>
-        <p>
-          Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-          Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-          mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-          lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-          imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-          in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-        </p>
-      </div>
-    );
-  }
+import tracker from '../assets/tracker.jpg'
+import readme from '../assets/readme.jpg'
+import vehicle from '../assets/vehicle.jpg'
+import movie from '../assets/movie.jpg'
+import movie2 from '../assets/movie2.jpg'
+import weather from '../assets/weather.jpg'
+
+
   
+export default function Portfolio() {
+  const titleStyle = {
+    padding: "20px",
+    fontSize: "50px",
+    margin: "50px",
+    textAlign: "center",
+  };
+
+  const gridStyle = { // grid style properties and use from mdn webdocs
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "20px", 
+    padding: "20px",
+  };
+
+  const cardStyle = {
+    textAlign: "center",
+    borderRadius: "10px",
+    padding: "10px",
+  };
+
+  const imageStyle = {
+    width: "100%",
+    height: "500px",
+    objectFit: "cover",
+    borderRadius: "10px",
+  };
+
+  const link = {
+    textDecoration: 'none',
+    color: 'white',
+  }
+  const projects = [
+    {
+      title: "Employee Tracker",
+      img: tracker, 
+      github: "https://github.com/owengx/Employee-Tracker", 
+    },
+    {
+      title: "README Generator",
+      img: readme,
+      github: "https://github.com/owengx/professional-readme-generator",
+    },
+    {
+      title: "Vehicle Builder",
+      img: vehicle,
+      github: "https://github.com/owengx/Vehicle-Builder",
+    },
+    {
+      title: "Movie-Review Group Project",
+      img: movie,
+      github: "https://github.com/J0263/Movie-Review",
+    },
+    {
+      title: "Gruesome Goonz Group Project",
+      img: movie2,
+      github: "https://github.com/KyreeJ/project-1",
+    },
+    {
+      title: "Weather App",
+      img: weather,
+      github: "https://github.com/owengx/my-weather-app",
+    },
+  ];
+
+  return (
+    <div>
+      <h1 style={titleStyle}>Portfolio</h1>
+      <div style={gridStyle}>
+        {projects.map((project) => ( // iterates over project array
+          <div style={cardStyle}>
+            <img src={project.img}  style={imageStyle} />
+            <h3>{project.title}</h3>
+            <p>
+              <a href={project.github} target="_blank" style ={link}>
+               GitHub Repository
+              </a>
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
