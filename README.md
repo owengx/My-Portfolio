@@ -18,6 +18,9 @@ React application with section titled "About Me" "Projects" "Contact", "Resume"
 
 ## ScreenShots
 ![image alt](https://github.com/owengx/My-Portfolio/blob/4fe1cda2ee1b45adecbec708c1c2acab88937dc0/Screenshot%202024-11-22%20020747.png)
+![image alt](https://github.com/owengx/My-Portfolio/blob/1f23c8889ad63aadb6b6d4db4559634724bdbd0c/Screenshot%202024-11-22%20020810.png)
+![image alt](https://github.com/owengx/My-Portfolio/blob/1f23c8889ad63aadb6b6d4db4559634724bdbd0c/Screenshot%202024-11-22%20020827.png)
+![image alt](https://github.com/owengx/My-Portfolio/blob/1f23c8889ad63aadb6b6d4db4559634724bdbd0c/Screenshot%202024-11-22%20020847.png)
 
 ## Installation
 NPM Run Build
