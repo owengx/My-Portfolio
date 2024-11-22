@@ -7,7 +7,7 @@ function Navigation ({ currentPage, handlePageChange }) {
   // const currentPage = useLocation().pathname;
     return (
       <ul className="nav">
-         <h1 className = "name">Owen Gayle</h1>
+         {/* <h1 className = "name">Owen Gayle</h1> */}
         <li className="nav">
           <Link
             to="#about"

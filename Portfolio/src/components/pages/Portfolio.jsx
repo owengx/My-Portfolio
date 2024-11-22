@@ -1,3 +1,4 @@
+
 import tracker from '../assets/tracker.jpg'
 import readme from '../assets/readme.jpg'
 import vehicle from '../assets/vehicle.jpg'
@@ -5,8 +6,6 @@ import movie from '../assets/movie.jpg'
 import movie2 from '../assets/movie2.jpg'
 import weather from '../assets/weather.jpg'
 
-
-  
 export default function Portfolio() {
   const titleStyle = {
     padding: "20px",
@@ -76,9 +75,9 @@ export default function Portfolio() {
     <div>
       <h1 style={titleStyle}>Portfolio</h1>
       <div style={gridStyle}>
-        {projects.map((project) => ( // iterates over project array
-          <div style={cardStyle}>
-            <img src={project.img}  style={imageStyle} />
+        {projects.map((project, index) => ( // iterates over project array
+          <div key = {index} style={cardStyle}>
+            <img src={project.img}  style={imageStyle}  />
             <h3>{project.title}</h3>
             <p>
               <a href={project.github} target="_blank" style ={link}>

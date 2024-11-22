@@ -3,18 +3,19 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   background: rgb(129, 125, 143);
+   /* background:rgb(129, 125, 143); */
+   background:#82a2c4;
     padding: 10px 0%;
     list-style: none;
 }
 
-.name{
+/* .name{
    font-family:fantasy;
    font-size: 30px;
    color: white;
    padding-left: 2%;
  
-}
+} */
 
 ul li a {
     text-decoration: none;

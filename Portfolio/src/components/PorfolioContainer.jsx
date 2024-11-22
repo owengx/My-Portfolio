@@ -4,7 +4,8 @@ import About from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-// import Header from './components/Header';
+import Footer from './Footer'
+import Header from './Header';
 
 
 export default function PortfolioContainer() {
@@ -12,7 +13,9 @@ export default function PortfolioContainer() {
   const style = {
     backgroundColor: 'black',
     minHeight: '100vh',
-    color: 'white'
+    color: 'white',
+    display: 'flex',
+    flexDirection: 'column'
   }
   const [currentPage, setCurrentPage] = useState('About');
 
@@ -34,10 +37,12 @@ export default function PortfolioContainer() {
 
   return (
     <div style= {style}>
+        <Header/>
       {/* We are passing the currentPage from state and the function to update it */}
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
-      <main className="mx-3">{renderPage()}</main>
+      <main className="mx-3" style={{flex: 1}}>{renderPage()}</main>
+      <Footer/>
     </div>
   );
 }
