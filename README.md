@@ -32,6 +32,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
 https://www.pexels.com/
 https://www.npmjs.com/package/react-icons
 https://sentry.io/answers/react-for-loops/
+Tutor: Ntandoyenkosi
 
 ## License
 MIT
